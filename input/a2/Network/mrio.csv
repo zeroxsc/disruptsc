@@ -1,0 +1,6 @@
+to_country,,CHN,TUR,TUR,CHN
+to_sector,,AGR,MAN,final_demand,final_demand
+from_country,from_sector
+CHN,AGR,50,30,500,8000
+TUR,MAN,30,40,1000,2000
+

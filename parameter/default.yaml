@@ -1,0 +1,114 @@
+account_capacity: true
+buying_sectors_with_extra_inventories: all
+combine_sector_cutoff: and
+congestion: true
+cost_repercussion_mode: type1
+countries_to_include: all
+cutoff_sector_demand:
+  type: relative_to_average
+  value: 0.1
+cutoff_sector_output:
+  type: relative_to_average
+  value: 0.01
+disruption_description: None
+district_sector_cutoff: 0.003
+districts_to_include: all
+duration_dic:
+  1: 4
+  2: 8
+  3: 11
+  4: 14
+epsilon_stop_condition: 1e-3
+explicit_service_firm: true
+export_details:
+  agent_data: false
+  country_table: true
+  criticality: true
+  district_sector_table: false
+  edgelist_table: true
+  firm_table: true
+  flows: false
+  impact_per_firm: false
+  inventories: false
+  log: true
+  odpoint_table: true
+  sc_flow_analysis: false
+  sc_network_summary: true
+  time_series: false
+  transport: false
+export_files: false
+extra_inventory_target: None
+extra_roads: false
+filepaths:
+  admin_unit_data: Subnational/admin_unit_data.geojson
+  airways_edges: Transport/airways_edges.geojson
+  airways_nodes: Transport/airways_nodes.geojson
+  exports: Trade/export_table.csv
+  firm_table: Network/firm_table.csv
+  imports: Trade/import_table.csv
+  inventory_duration_targets: National/inventory_targets.csv
+  maritime_edges: Transport/maritime_edges.geojson
+  maritime_nodes: Transport/maritime_nodes.geojson
+  mrio: Network/mrio.csv
+  multimodal_edges: Transport/multimodal_edges.geojson
+  railways_edges: Transport/railways_edges.geojson
+  railways_nodes: Transport/railways_nodes.geojson
+  region_table: Network/region_table.geojson
+  roads_edges: Transport/roads_edges.geojson
+  roads_nodes: Transport/roads_nodes.geojson
+  sector_table: National/sector_table.csv
+  tech_coef: National/tech_coef.csv
+  transaction_table: Network/transaction_table.csv
+  transit: Trade/transit_matrix.csv
+  transport_modes: Transport/transport_modes.csv
+  transport_parameters: Transport/transport_parameters.yaml
+  waterways_edges: Transport/waterways_edges.geojson
+  waterways_nodes: Transport/waterways_nodes.geojson
+firm_data_type: disaggregating IO
+firm_sampling_mode: economic_adminunit_data
+force_local_retailer: true
+inputs_with_extra_inventories: all
+inventory_duration_target: 2
+io_cutoff: 0.01
+local_demand_cutoff: 0
+logging_level: info
+logistic_modes: any
+min_nb_firms_per_sector: 5
+model_IO: false
+monetary_units_in_model: mUSD
+monetary_units_inputed: mUSD
+nb_suppliers_per_input: 1
+nb_top_district_per_sector: 1
+nodeedge_tested_skipn: None
+nodeedge_tested_topn: None
+pop_cutoff: 0
+pop_density_cutoff: 0
+price_increase_threshold: 2
+propagate_input_price_change: true
+rationing_mode: household_first
+reactivity_rate: 0.1
+route_optimization_weight: cost_per_ton
+sectors_no_transport_network:
+- utility
+- transport
+- trade
+- service
+sectors_to_exclude: None
+sectors_to_include: all
+simulation_type: initial_state
+specific_edges_to_monitor:
+  multimodal: []
+  special: []
+time_resolution: week
+transport_cost_data:
+  airways: mode-specific
+  maritime: mode-specific
+  railways: mode-specific
+  roads: surface-specific
+  waterways: mode-specific
+transport_cost_noise_level: 0
+transport_modes:
+- maritime
+utilization_rate: 0.8
+weight_localization_firm: 1
+weight_localization_household: 4

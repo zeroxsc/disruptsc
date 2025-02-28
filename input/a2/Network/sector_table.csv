@@ -1,0 +1,4 @@
+,sector,export_value,output,final_demand,share_exporting_firms,usd_per_ton,supply_data_currency,cutoff,sector_code,type
+5,CHN_AGR,27404.23708,543579.431,217501.9893,0.050414411,1000,USD,0,AGR,AGR
+14,TUR_MAN,18636.79787,61325.71889,42174.40498,0.303898563,1000,USD,0,MAN,MAN
+1106,IMP,0,190.3986643,0,1,1000,USD,0,imports,imports
